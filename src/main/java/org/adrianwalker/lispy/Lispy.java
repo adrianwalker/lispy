@@ -80,7 +80,7 @@ public final class Lispy {
   }
 
   private String[] tokenize(final String s) {
-    return s.replace("(", " ( ").replace(")", " ) ").replaceAll("\\s+", " ").trim().split("\\s");
+    return s.replace("(", " ( ").replace(")", " ) ").trim().split("\\s+");
   }
 
   private Object readFrom(final Deque<String> tokens) {
